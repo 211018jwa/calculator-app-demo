@@ -58,7 +58,7 @@ public class ArithmeticServiceTest {
 	}
 	
 	@Test
-	public void addNegativeTest() {
+	public void subtractPositiveTest() {
 		/*
 		 * AAA: ARRANGE, ACT, ASSERT
 		 */
@@ -84,7 +84,7 @@ public class ArithmeticServiceTest {
 	}
 	
 	@Test
-	public void addNegativeTest_2() {
+	public void subtractPositiveTest_2() {
 		/*
 		 * AAA: ARRANGE, ACT, ASSERT
 		 */
