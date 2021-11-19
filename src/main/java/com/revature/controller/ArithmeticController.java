@@ -18,6 +18,15 @@ public class ArithmeticController {
 		ctx.result(sum);
 	};
 	
+	private Handler subtract = (ctx) -> {
+		String num1 = ctx.formParam("number1");
+		String num2 = ctx.formParam("number2");
+		
+		String difference = this.arithmeticService.subtract(num1, num2);
+		
+		ctx.result(difference);
+	};
+	
 	// Constructor
 	public ArithmeticController() {
 		this.arithmeticService = new ArithmeticService();
@@ -25,6 +34,7 @@ public class ArithmeticController {
 	
 	public void mapEndpoints(Javalin app) {
 		app.post("/add", add);
+		app.post("/subtract", subtract);
 	}
 	
 }

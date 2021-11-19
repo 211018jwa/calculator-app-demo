@@ -17,4 +17,13 @@ public class ArithmeticService {
 		return "" + result;
 	}
 	
+	public String subtract(String num1, String num2) {
+		double number1 = Double.parseDouble(num1);
+		double number2 = Double.parseDouble(num2);
+		
+		double result = number1 - number2;
+		
+		return "" + result;
+	}
+	
 }

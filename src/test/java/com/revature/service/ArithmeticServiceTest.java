@@ -57,4 +57,56 @@ public class ArithmeticServiceTest {
 		Assertions.assertEquals("7.75", actual);
 	}
 	
+	@Test
+	public void subtractPositiveTest() {
+		/*
+		 * AAA: ARRANGE, ACT, ASSERT
+		 */
+		
+		/*
+		 * ARRANGE: setup whatever we are testing
+		 * 
+		 * What are you testing? The add method from the ArithmeticService
+		 * 
+		 * SO what do you need to arrange then? Instantiate a ArithmeticService object
+		 */
+		ArithmeticService as = new ArithmeticService();
+		
+		/*
+		 * Act: invoke whatever method we are actually testing (the add method)
+		 */
+		String actual = as.subtract("2", "5");
+		
+		/*
+		 * Assert: assert that the actual condition matches what we would expect
+		 */
+		Assertions.assertEquals("-3.0", actual);
+	}
+	
+	@Test
+	public void subtractPositiveTest_2() {
+		/*
+		 * AAA: ARRANGE, ACT, ASSERT
+		 */
+		
+		/*
+		 * ARRANGE: setup whatever we are testing
+		 * 
+		 * What are you testing? The add method from the ArithmeticService
+		 * 
+		 * SO what do you need to arrange then? Instantiate a ArithmeticService object
+		 */
+		ArithmeticService as = new ArithmeticService();
+		
+		/*
+		 * Act: invoke whatever method we are actually testing (the add method)
+		 */
+		String actual = as.subtract("2.5", "1.25");
+		
+		/*
+		 * Assert: assert that the actual condition matches what we would expect
+		 */
+		Assertions.assertEquals("1.25", actual);
+	}
+	
 }
