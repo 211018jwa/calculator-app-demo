@@ -129,5 +129,22 @@ public class ArithmeticServiceTest {
 		Assertions.assertEquals("-3.0", actual);
 	}
 	
+	@Test
+	public void dividePositiveTest() {
+		ArithmeticService as = new ArithmeticService();
+
+		String actual = as.divide("5", "2");
+		Assertions.assertEquals("2.5", actual);
+	}
+	
+	@Test
+	public void dividePositiveTest_2() {
+		ArithmeticService as = new ArithmeticService();
+
+		String actual = as.divide("10.5", "2");
+
+		Assertions.assertEquals("5.25", actual);
+	}
+	
 }
 
