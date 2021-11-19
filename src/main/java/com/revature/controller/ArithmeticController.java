@@ -36,6 +36,15 @@ public class ArithmeticController {
 		ctx.result(product);
 	};
 	
+	private Handler divide = (ctx) -> {
+		String num1 = ctx.formParam("number1");
+		String num2 = ctx.formParam("number2");
+		
+		String quotient = this.arithmeticService.divide(num1, num2);
+		
+		ctx.result(quotient);
+	};
+	
 	// Constructor
 	public ArithmeticController() {
 		this.arithmeticService = new ArithmeticService();
@@ -45,6 +54,7 @@ public class ArithmeticController {
 		app.post("/add", add);
 		app.post("/subtract", subtract);
 		app.post("/multiply", multiply);
+		app.post("/divide", divide);
 	}
 	
 }
